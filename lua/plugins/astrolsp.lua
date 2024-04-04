@@ -43,7 +43,14 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      volar = { filetypes = { "vue", "typescript", "javascript", "json" } },
+      volar = {
+        filetypes = { "vue", "typescript", "javascript", "json" },
+        init_options = {
+          vue = {
+            hybridMode = false,
+          },
+        },
+      },
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
     },
     -- customize how language servers are attached
