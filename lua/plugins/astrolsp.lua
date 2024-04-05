@@ -43,13 +43,18 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      volar = {
-        filetypes = { "vue", "typescript", "javascript", "json" },
+      tsserver = {
         init_options = {
-          vue = {
-            hybridMode = false,
+          plugins = {
+            {
+              name = "@vue/typescript-plugin",
+              languages = { "javascript", "typescript", "vue" },
+              location = os.getenv "HOME"
+                .. "/.local/share/nvim/mason/packages/vue-language-server/node_modules/@vue/typescript-plugin",
+            },
           },
         },
+        filetypes = { "typescript", "javascript", "vue" },
       },
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
     },
