@@ -50,7 +50,7 @@ return {
               name = "@vue/typescript-plugin",
               languages = { "javascript", "typescript", "vue" },
               location = os.getenv "HOME"
-                .. "/.local/share/nvim/mason/packages/vue-language-server/node_modules/@vue/typescript-plugin",
+                .. "/.local/share/nvim/mason/packages/vue-language-server/node_modules/@vue/language-server",
             },
           },
         },
