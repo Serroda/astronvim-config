@@ -1,4 +1,3 @@
-
 -- Customize Mason plugins
 
 ---@type LazySpec

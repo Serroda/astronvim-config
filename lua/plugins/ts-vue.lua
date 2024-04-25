@@ -1,19 +1,21 @@
 return {
   {
     "AstroNvim/astrolsp",
-    config = {
-      tsserver = {
-        init_options = {
-          plugins = {
-            {
-              name = "@vue/typescript-plugin",
-              languages = { "javascript", "typescript", "vue" },
-              location = os.getenv "HOME"
-                .. "/.local/share/nvim/mason/packages/vue-language-server/node_modules/@vue/language-server",
+    opts = {
+      config = {
+        tsserver = {
+          init_options = {
+            plugins = {
+              {
+                name = "@vue/typescript-plugin",
+                languages = { "javascript", "typescript", "vue" },
+                location = os.getenv "HOME"
+                  .. "/.local/share/nvim/mason/packages/vue-language-server/node_modules/@vue/language-server",
+              },
             },
           },
+          filetypes = { "typescript", "javascript", "vue" },
         },
-        filetypes = { "typescript", "javascript", "vue" },
       },
     },
   },
@@ -28,7 +30,7 @@ return {
         "jsonls",
         "html",
         "cssls",
-        "markdownlint",
+        "marksman",
       })
     end,
   },
