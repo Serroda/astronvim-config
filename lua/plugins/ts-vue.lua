@@ -30,7 +30,7 @@ return {
         "jsonls",
         "html",
         "cssls",
-        "markdownlint-cli2",
+        "markdownlint",
       })
     end,
   },
