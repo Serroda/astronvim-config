@@ -30,7 +30,6 @@ return {
         "jsonls",
         "html",
         "cssls",
-        "markdownlint",
       })
     end,
   },
@@ -45,7 +44,6 @@ return {
         "css",
         "javascript",
         "typescript",
-        "markdown",
       })
     end,
   },
