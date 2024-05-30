@@ -9,6 +9,11 @@ return {
       "lua",
       "vim",
       "markdown",
+      "html",
+      "json",
+      "css",
+      "javascript",
+      "typescript",
     })
   end,
 }
