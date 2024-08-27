@@ -9,5 +9,6 @@ return {
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
   { import = "astrocommunity.color.modes-nvim" },
   { import = "astrocommunity.pack.vue" },
+  { import = "astrocommunity.pack.rust" },
   -- import/override with your plugins folder
 }
