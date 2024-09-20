@@ -10,5 +10,6 @@ return {
   { import = "astrocommunity.color.modes-nvim" },
   { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   -- import/override with your plugins folder
 }
