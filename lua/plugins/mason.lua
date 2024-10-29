@@ -12,6 +12,7 @@ return {
         "jsonls",
         "html",
         "cssls",
+        "unocss",
         -- add more arguments for adding more language servers
       })
     end,
