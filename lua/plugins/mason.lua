@@ -9,7 +9,7 @@ return {
       ensure_installed = {
         "json-lsp",
         "html-lsp",
-        "json-lsp",
+        "css-lsp",
         "unocss-language-server",
       },
     },
